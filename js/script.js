@@ -1,4 +1,5 @@
-const overview = document.querySelector(".overview"); // profile information target point
+const overview = document.querySelector(".overview"); // Let's target profile information
+const repoList = document.querySelector(".repo-list");
 const username = "Nasirkhan294";
 
 const githubGallery = async function () {
@@ -22,4 +23,21 @@ const githubUserData = function(data) {
     <p><strong>Number of public repos:</strong> ${data.public_repos}</p>
     </div>`;
     overview.append(div);
+};
+
+const gitRepos = async function () {
+    const fetchRepos = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
+    const showData = await fetchRepos.json();
+    displayRepos(showData);
+};
+
+gitRepos();
+
+const displayRepos = function(repos) {
+    for(const repo of repos) {
+        const repoItem = document.createElement("li");
+        repoItem.classList.add("repo");
+        repoItem.innerHTML = `<h3>${repo.name}</h3>`;
+        repoList.append(repoItem);
+    }
 };
