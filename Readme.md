@@ -4,7 +4,7 @@
   <h1>📂 GitHub Repo Gallery</h1>
 </div>
 
-![Github Repo Gallery](./img/preview.png)
+![Github Repo Gallery](./public/preview.png)
 
 A responsive **GitHub Repository Gallery Website** that dynamically displays repositories from a GitHub profile. It provides a clean interface to explore repos, view details, and improve project discoverability. Perfect for practicing **HTML, CSS, JavaScript, and API integration**. 🚀  
 
@@ -13,9 +13,8 @@ A responsive **GitHub Repository Gallery Website** that dynamically displays rep
 ## 🛠 Built With <a name="built-with"></a>
 
 <ul>
-  <li>HTML</li>
+  <li>Vite + React</li>
   <li>CSS</li>
-  <li>JavaScript (Fetch API)</li>
   <li>GitHub API</li>
 </ul>
 
