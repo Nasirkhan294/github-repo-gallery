@@ -34,7 +34,7 @@ A responsive **GitHub Repository Gallery Website** that dynamically displays rep
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Project Demo](https://nasirkhan294.github.io/github-repo-gallery/)
+- [Live Project Demo](https://github-repo-gallary.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
